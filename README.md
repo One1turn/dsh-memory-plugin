@@ -61,7 +61,7 @@ git clone https://github.com/One1turn/dsh-memory-plugin.git
 
 ## 已知边界
 
-- 设置导航的小图标由宿主按分区 id 写死（Jet Hub 同样是默认齿轮），插件侧无法自定义；大脑图标在分区标题旁与插件管理卡片。
+- 设置导航的小图标由宿主按分区 id 写死，插件侧无法自定义；大脑图标在分区标题旁与插件管理卡片。
 - autoExtract 需要 profile 内至少一次成功模型请求（复用其路由）。
 - 提取为单次无工具调用，比 ZCode 的 5-turn 子代理轻，写入精度略低但零额外工具面。
 - 外部 link 插件解析不到宿主 asar 内的 SDK，因此 index.js 刻意零 `@deepseek-ai/*` 裸导入，全部走 ctx 服务。
