@@ -1,6 +1,6 @@
 {
   "name": "@local/dsh-memory",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "type": "module",
   "description": "ZCode-style persistent memory for DeepSeek Harness: markdown memories per project, MEMORY.md index injection, remember/list/read tools, post-turn auto-extraction, and a settings-page management UI.",
@@ -11,9 +11,18 @@
     "./package.json": "./package.json",
     "./locale/*.json": "./locale/*.json"
   },
-  "files": ["index.js", "client.js", "icon.svg", "locale/*.json"],
+  "files": [
+    "index.js",
+    "client.js",
+    "icon.svg",
+    "locale/*.json"
+  ],
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
-    "client": { "platform": "web" }
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
   }
 }

@@ -241,7 +241,7 @@ window.__ModuleLoader__.load({
       }, [files, search]);
 
       return h("div", { className: "dshm-wrap" },
-        h("h2", { className: "dshm-title" }, h(IconBrain, null), h("span", null, "记忆")),
+        h("h2", { className: "dshm-title" }, "记忆"),
         h("div", { className: "dshm-card" },
           h("div", null,
             h("div", { className: "dshm-card-title" }, "工作区记忆"),
